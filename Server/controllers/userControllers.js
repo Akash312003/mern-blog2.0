@@ -52,7 +52,7 @@ const loginUser = async (req, res, next) => {
     try{
         const {email,password} = req.body;
         if(!email || !password){
-            return next(new HttpError("Fill in all fields>", 422) )
+            return next(new HttpError("Fill in all fields", 422) )
         }
         const newEmail = email.toLowerCase();
 

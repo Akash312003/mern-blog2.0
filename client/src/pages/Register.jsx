@@ -31,7 +31,7 @@ try{
   if(!newUser){
     setError("couldn't register user. please try again")
   }
-  navigate('/')
+  navigate('/login')
 }catch(err){
   setError(err.response.data.message)
 }
