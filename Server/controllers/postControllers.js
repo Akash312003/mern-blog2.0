@@ -163,7 +163,7 @@ const deletePost = async (req,res,next) =>{
         return next(new HttpError("Post couldn't be deleted", 403))
     }
         
-    } catch(error){
+    } catch(err){
         return next(new HttpError(err))
     
 }}
